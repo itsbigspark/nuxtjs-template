@@ -3,12 +3,19 @@ import eslintPlugin from 'vite-plugin-eslint';
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     modules: [
-        '@nuxtjs/tailwindcss'
+        '@nuxtjs/tailwindcss',
+        '@pinia/nuxt',
     ],
     typescript: {
         strict: true,
     },
     css: ['~/assets/style/_.scss'],
+    pinia: {
+        autoImports: [
+            // automatically imports `defineStore`
+            'defineStore',
+        ],
+    },
     vite: {
         css: {
             preprocessorOptions: {
