@@ -20,10 +20,13 @@ module.exports = {
   // add your custom rules here
   rules: {
     'no-console': 'off',
-  }, 
+  },
   overrides: [
     {
-      files: ['pages/**/*.vue'],
+      files: [
+        'pages/**/*.vue',
+        'layouts/**/*.vue'
+      ],
       rules: {
         'vue/multi-word-component-names': 0
       }
