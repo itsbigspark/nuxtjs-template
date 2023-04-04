@@ -13,7 +13,6 @@ export default defineNuxtConfig({
     css: ['~/assets/style/_.scss'],
     pinia: {
         autoImports: [
-            // automatically imports `defineStore`
             'defineStore',
         ],
     },
@@ -21,7 +20,7 @@ export default defineNuxtConfig({
         css: {
             preprocessorOptions: {
                 scss: {
-                    additionalData: '@use "@/assets/style/scss/main.scss";'
+                    additionalData: '@use "@/assets/style/scss/main.scss" as *;'
                 }
             }
         },
