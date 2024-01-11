@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: nuxtjs-template
+  annotations:
+    github.com/project-slug: itsbigspark/nuxtjs-template
+spec:
+  type: other
+  lifecycle: unknown
+  owner: guests
