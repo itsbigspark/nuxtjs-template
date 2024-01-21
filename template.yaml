@@ -63,7 +63,7 @@ spec:
       input:
         url: ./template
         values:
-          name: ${{ parameters.name }}
+          project_name: ${{ parameters.name }}
           owner: ${{ parameters.owner }}
           system: ${{ parameters.system }}
           destination: ${{ parameters.repoUrl | parseRepoUrl }}
