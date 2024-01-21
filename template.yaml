@@ -2,14 +2,14 @@ apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: docs-template
-  title: Documentation Template
-  description: Create a new standalone documentation project
+  title: NuxtJs Template
+  description: Create a new nuxtjs project
   tags:
     - recommended
     - techdocs
     - mkdocs
 spec:
-  owner: my-awesome-team
+  owner: bigspark
   type: documentation
 
   parameters:
